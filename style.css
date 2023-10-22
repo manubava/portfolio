@@ -1,0 +1,167 @@
+body {
+  background-color: #000; 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.estrela {
+  width: 150px; 
+  height: 150px; 
+  background-color: #FFFFFF; 
+  border-radius: 50%; 
+  position: absolute;
+  animation: brilhar 1s infinite alternate;
+}
+
+@keyframes brilhar {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.retro-name {
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 40px;
+  white-space: nowrap; 
+
+  position: absolute;
+  top: 0.5cm; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: #2428ff; 
+}
+
+.retro-profissao {
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 26px;
+  text-align: center; 
+
+  white-space: nowrap;
+
+  position: absolute;
+  top: 2.3cm; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: #33eede; 
+}
+
+.retro-info {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  text-align: left; 
+  color: #FFFF;
+  margin-top: 0.5cm;
+  word-wrap: break-word;
+}
+
+.retro-info-container {
+  text-align: left; 
+  margin-right: 6cm;
+}
+
+.retro-shots {
+  position: absolute;
+  width: 4px;
+  height: 11px;
+  background: rgb(231, 29, 221);
+  animation: move-shots 2s linear infinite;
+}
+
+@keyframes move-shots {
+  0% { top: 100%; }
+  100% { top: -10px; }
+}
+
+
+.rocket-1, .rocket-2, .rocket-3, .rocket-4 {
+  position: absolute;
+  width: 250px; 
+}
+
+.rocket-1 {
+  animation: move-rocket-1 5.2s linear infinite;
+  bottom: 0;
+
+}
+
+.rocket-2 {
+  animation: move-rocket-2 5.6s linear infinite;
+  bottom: 7cm;
+  animation-delay: 0.3s;
+
+
+
+}
+
+.rocket-3 {
+  animation: move-rocket-3 4.5s linear infinite;
+  bottom: 12cm;
+
+}
+
+.rocket-4 {
+  animation: move-rocket-4 4s linear infinite;
+  bottom: 20cm;
+  animation-delay: 0.3s; 
+
+
+}
+
+@keyframes move-rocket-1 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 250px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+@keyframes move-rocket-2 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 240px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes move-rocket-3 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 250px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes move-rocket-4 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 260px);
+  }
+  100% {
+    left: 0;
+  }
+}
